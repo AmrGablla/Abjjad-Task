@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    background: #F0EFED;
+  }
+  .font-14 {
+    font-size: 14px;
+  }
+  .container {
+    width: 580px;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    transition: .4s background-color;
+  }
+  .img-container {
+    position: relative;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+  }
+  .img-container img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate( -50%, -50%);
+      -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      object-fit: cover;
+      object-position: center;
+  }
+  .action-button {
+    transition: .3s background-color;
+  }
+  .action-button:hover {
+    background-color: rgba(101, 119, 134, .1);
+  }
+  .hover-name:hover {
+    text-decoration: underline;
+  }
+  .info-card {
+    display: none;
+    min-width: 400px;
+  }
+  .info-card.show {
+    display: block;
+  }
+  .pop-up{
+    animation: popUp .3s ease;
+  }
+  i {
+    transition: .4s color;
+  }
+  @keyframes popUp {
+    0% {transform: scale(.5);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+  }
+  
+  .rt-active,
+  .rt-active:hover {
+    color: #2ecc71;
+  }
+  
+  .ht-active,
+  .ht-active:hover {
+    color: #e74c3c;
+  }

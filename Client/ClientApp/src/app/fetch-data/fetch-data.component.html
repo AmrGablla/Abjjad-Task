@@ -1,0 +1,22 @@
+<p *ngIf="!posts"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="posts">
+  
+  <div *ngFor="let post of posts">
+    <div class="container position-relative">
+      <div class="card mt-4 mb-4">
+        <div class="card-body">
+          <div class="media"> 
+            <div class="media-body"> 
+              
+                <h5>{{ post.id }}</h5>  
+                <h5>{{ post.text }}</h5>    
+             
+            </div>
+          </div>
+          <hr> 
+        </div>
+      </div>
+    </div>
+  </div>
+</table>
